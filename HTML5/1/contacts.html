@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Все для волос</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <p>Все для волос</p>
-    <ul>
+    <ul class="menu">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="contacts.html">Контакты</a></li>
@@ -19,15 +20,16 @@
     <form action="contacts.html" method="post">
     <fieldset>
         <legend>Напишите нам</legend>
-        <input name="name" type="text" placeholder="Ваше имя">
+
+        <input class="contact" name="name" type="text" placeholder="Ваше имя">
         <br>
-        <input name="email" type="email" placeholder="Ваше е-mail">
+        <input class="contact" name="email" type="email" placeholder="Ваше е-mail" required>
         <br>
-        <input name="subject" type="text" placeholder="Тема сообщения">
+        <input class="contact" name="subject" type="text" placeholder="Тема сообщения">
         <br>
         <label for="message">Суть вашего письма:</label>
         <br>
-        <textarea id="message" rows="10" cols="45" name="message"></textarea>
+        <textarea id="message" rows="10" cols="45" name="message" required></textarea>
         <br>
         <input type="submit" value="Отправить">
     </fieldset>
