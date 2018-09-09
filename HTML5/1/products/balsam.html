@@ -7,13 +7,21 @@
 </head>
 <body>
 
-    <p>Все для волос</p>
-    <ul class="menu">
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="../catalog.html">Каталог</a></li>
-        <li><a href="../contacts.html">Контакты</a></li>
-    </ul>
-    <hr>
+    <div class="header">
+
+        <div class="header-menu">
+            <div class="name-site">Все для волос</div>
+
+            <ul class="menu">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../catalog.html">Каталог</a></li>
+                <li><a href="../contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+    </div>
 
     <div class="products">
 
@@ -27,11 +35,28 @@
         <p id="description">Балансирующий бальзам, обогащенный 3 видами глины.</p>
 
         <h3>Характеристики товара:</h3>
+        <table class="properties">
+            <tr>
+                <td class="marker"></td>
+                <td>72 часа увлажнения и естественная легкость по всей длине</td>
+            </tr>
+            <tr>
+                <td class="marker"></td>
+                <td>Легкое расчесывание, без утяжеления</td>
+            </tr>
+            <tr>
+                <td class="marker"></td>
+                <td>Без силикона</td>
+            </tr>
+        </table>
+
+<!--
         <ul id="properties">
             <li>72 часа увлажнения и естественная легкость по всей длине</li>
             <li>Легкое расчесывание, без утяжеления</li>
             <li>Без силикона</li>
         </ul>
+-->
 
         <h3>Подробное описание товара:</h3>
         <p  id="description_full">Балансирующий бальзам для волос ЭЛЬСЕВ 3 ЦЕННЫЕ ГЛИНЫ идеально подойдет для волос,
@@ -49,8 +74,10 @@
 
     </div>
 
-    <hr>
-    <p>&copy; Все права защищены</p>
+    <div class="footer">
+        <hr>
+        <p>&copy; Все права защищены</p>
+    </div>
 
 </body>
 </html>
