@@ -34,11 +34,6 @@ img {
     width: 198px;
     margin: 10px;
 }
-/*
-.menu-splitter {
-    margin-top: 2em;
-}
-*/
 
 .menu a {
     text-decoration: none;
@@ -62,6 +57,10 @@ img {
     font-style: italic;
     line-height: 16px;
     font-weight: bold;
+}
+
+.products img {
+    width: 400px;
 }
 
 .products img:hover {
@@ -113,4 +112,8 @@ img {
 .footer {
     background: burlywood;
     text-align: center;
+}
+
+.catalog img{
+    width: 200px;
 }
