@@ -24,6 +24,7 @@ img {
     font-family: sans-serif;
     font-weight: bold;
     height: 170px;
+    position: relative;
 }
 
 .name-site {
@@ -41,7 +42,7 @@ img {
     font-size: 1.2em;
     position: absolute;
     top: 0;
-    padding-left: 600px;
+    right: 30px;
 }
 
 .header-backgroung {
@@ -141,15 +142,23 @@ img {
     padding: 15px;
 }
 
+.catalog-icons {
+    width: 100%;
+    float: left;
+}
+
 .catalog {
     float: left;
     position: relative;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    width: 228px;
+    margin-right: 4%;
+    margin-bottom: 20px;
+    width: 22%;
     height: 335px;
-    border-style: solid;
-    border-width: 1px;
+    outline: 1px solid #ccc;
+}
+
+.catalog:nth-child(4n) {
+    margin-right: 0;
 }
 
 .catalog p {
@@ -157,11 +166,11 @@ img {
 }
 
 .catalog .name{
-    height: 2.3em;
+    height: 3.5em;
 }
 
 .catalog img{
-    width: 228px;
+    width: 100%;
     border-style: none;
 }
 .catalog a {
