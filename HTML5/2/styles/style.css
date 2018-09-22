@@ -1,25 +1,91 @@
 
 body {
     margin: 0;
+    background: bisque;
+    font-family: sans-serif;
 }
 
 .header {
     width: 100%;
     height: 700px;
+    /*
     background: coral;
+    */
+    /*
     float: left;
+    */
+    background: url(../images/header-background.jpg) no-repeat;
+    background-size: cover;
 }
 
 .headerInside {
     width: 1170px;
     height: inherit;
     margin: 0 auto;
-    background: antiquewhite;
+    position: relative
+}
+
+.headerInsideWelcome {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    width: 200px;
+    height: 250px;
+    background: #373737;
+    color: white;
+    padding: 10px;
+}
+
+.headerInsideWelcomeH {
+    font-size: 1.7em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.headerInsideBay{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    width: 200px;
+    height: 250px;
+    color: white;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.headerInsideBayH {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.headerInsideBayButton {
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 6em;
+    height: 3em;
+    line-height: 3em;
+    background: burlywood;
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.headerInsideBayButton a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: none;
 }
 
 .headerInsideSocial {
     float: right;
-    margin: 50px;
+    margin-top: 50px;
+    margin-right: 260px;
     padding: 0;
 }
 
@@ -31,12 +97,25 @@ body {
 .headerInsideSocial li a{
     text-decoration: none;
     color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    color: white;
+    width: 50px;
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 50px;
 }
 
 .content {
     width: 100%;
     min-height: 800px;
-    background: bisque;
+    /*
+    background: darkcyan;
+    */
     float: left;
 }
 
@@ -44,27 +123,140 @@ body {
     width: 1170px;
     min-height: 800px;
     margin: 0 auto;
-    background: aqua;
 }
 
 .contentInsideLeft{
     width: 270px;
     min-height: 800px;
-    background: chartreuse;
     float: left;
+}
+
+.menuLeft {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    background: burlywood;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.menuLeft ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menuLeft li:first-child a{
+    list-style-type: none;
+    color: white;
+    background: #3c3c3c;
+}
+
+.menuLeft li {
+    list-style-type: none;
+}
+
+.menuLeft a{
+    display: block;
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.menuLeft a:hover {
+    color: white;
+    background: black;
+}
+
+.menuLeft-b {
+    position: relative;
+    width: 92%;
+    padding: 4%;
+    background: white;
+    margin-top: 2em;
+}
+
+.b-text{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 1px #000000;
+}
+
+.menuLeft-b img{
+    width: 100%;
 }
 
 .contentInsideRight {
     width: 870px;
     min-height: 800px;
+    /*
     background: darkgreen;
+    */
     float: right;
+    margin-top: -35px;
+}
+
+.productHeader {
+    float: left;
+    background: antiquewhite;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.7em;
+    padding: 20px;
+    width: 100%;
+    color: #606060;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.productWrap {
+    position: relative;
+}
+
+.productIcon {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 250px;
+    position: relative;
+    background: white;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.productIcon:nth-child(3n) {
+    margin-right: 0;
+}
+.productIcon img {
+    width: 100%;
+}
+
+.productName {
+    position: absolute;
+    bottom: 8px;
+}
+
+.productPrice {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
 }
 
 .bottom {
     width: 100%;
     float: left;
+    /*
     background: indigo;
+    */
 }
 
 .bottomInside {
@@ -73,24 +265,77 @@ body {
 }
 
 .bottomInsideBrand {
+    display: flex;
+    justify-content: space-between;
     width: inherit;
-    height: 160px;
+    height: 100px;
     float: left;
-    background: darkcyan;
+    background: white;
 }
+
+.bottomInsideBrand img{
+    height: 100%;
+}
+
 
 .bottomInsideInstagram {
     width: inherit;
-    height: 350px;
     float: left;
-    background: darkmagenta;
+    background: #eeeeee;
+}
+
+.InstagramHeader {
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.InstagramWrap {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.InstagramWrap img {
+    border: 10px solid white;
 }
 
 .bottomInsideNetwork {
+    display: flex;
+    justify-content: space-around;
     width: inherit;
+    /*
     height: 150px;
+    */
     float: left;
     background: deeppink;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.networkAll {
+    width: 33.333333333%;
+    padding: 45px;
+}
+
+.networkAll a{
+    text-decoration: none;
+    color: white;
+}
+
+.networkFacebook {
+    background: #3b5997;
+}
+
+.networkTwitter {
+    background: #3fccfd;
+}
+
+.networkPinterest {
+    background: #cb2027;
 }
 
 .footer {
@@ -103,7 +348,6 @@ body {
     width: 1170px;
     /* min-height: 300px; */
     margin: 0 auto;
-    font-family: sans-serif;
     color:  #ffffff;
     font-size: 12px;
     font-weight: 400;
@@ -139,6 +383,7 @@ body {
 .footerInsideContentHeader {
     font-size: 18px;
     font-weight: 700;
+    margin-top: 30px;
 }
 
 .footerInsideContentBlock {
@@ -192,8 +437,31 @@ body {
 .footerCopyrightInside {
     width: 1170px;
     height: 47px;
-    float: left;
     margin: 0 auto;
+    color: white;
+    font-size: 12px
 }
+
+.Copyright {
+    float: left;
+    padding-top: 15px;
+}
+
+.footerSoсial {
+    float: right;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.footerSoсial li{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.footerSoсial a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
